@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About - B6 Vintage Cloth Store</title>
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a2e0d6a2d7.js" crossorigin="anonymous"></script>
+
+  <style>
+    body {
+      background: radial-gradient(circle at top, #000 60%, #1a1a1a 100%);
+      color: #FFD700;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    /* Navbar */
+    .navbar {
+      background-color: rgba(17, 17, 17, 0.9);
+      border-bottom: 2px solid #FFD700;
+      backdrop-filter: blur(6px);
+    }
+
+    .navbar-brand, .nav-link {
+      color: #FFD700 !important;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+    }
+
+    .navbar-brand:hover, .nav-link:hover {
+      color: #fff !important;
+    }
+
+    /* Headings */
+    h1, h2 {
+      color: #FFD700;
+      font-weight: 700;
+      text-shadow: 0 0 12px rgba(255, 215, 0, 0.4);
+    }
+
+    p {
+      color: #c9b37a;
+      line-height: 1.8;
+      font-size: 1rem;
+    }
+
+    /* Image Styling */
+    .about-img {
+      border: 2px solid #FFD700;
+      border-radius: 15px;
+      transition: all 0.5s ease;
+      box-shadow: 0 0 20px rgba(255, 215, 0, 0.1);
+    }
+
+    .about-img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 40px rgba(255, 215, 0, 0.4);
+    }
+
+    /* Buttons */
+    .btn-gold {
+      background-color: #FFD700;
+      color: #000;
+      border: none;
+      font-weight: 600;
+      border-radius: 30px;
+      padding: 10px 25px;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .btn-gold:hover {
+      background-color: #d4af37;
+      transform: scale(1.05);
+    }
+
+    /* Divider */
+    .divider {
+      width: 90px;
+      height: 3px;
+      background: #FFD700;
+      margin: 20px auto 50px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px #FFD700;
+    }
+
+    /* Fade Animation */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 1s ease, transform 1s ease;
+    }
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Footer */
+    footer {
+      background-color: #111;
+      color: #FFD700;
+      text-align: center;
+      padding: 20px;
+      border-top: 2px solid #FFD700;
+      margin-top: 60px;
+    }
+
+    footer a {
+      color: #FFD700;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark shadow fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">B6 Vintage Store</a>
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon" style="filter: invert(78%) sepia(71%) saturate(415%) hue-rotate(12deg) brightness(98%) contrast(96%);"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="https://forms.gle/e2sSQjE6hUvJGqMv8">Feedback</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- About Section -->
+  <section class="container py-5" style="margin-top:80px;">
+    <div class="row align-items-center fade-in">
+      <div class="col-lg-6 mb-4">
+        <img src="/img/B6.jpg" alt="About B6 Store" class="img-fluid about-img">
+      </div>
+      <div class="col-lg-6">
+        <h1>About <span style="color:#d4af37;">B6 Vintage Cloth Store</span></h1>
+        <p>
+          Welcome to <strong>B6 Vintage Cloth Store</strong> — your destination for timeless fashion. We specialize 
+          in high-quality clothes, shoes, and accessories that blend vintage elegance with modern design.
+          Every piece tells a story of passion, craftsmanship, and individuality.
+        </p>
+        <p>
+          At B6, we value sustainability, style, and comfort. Our curated collections are inspired by classic trends,
+          reimagined for the modern generation that appreciates true vintage authenticity.
+        </p>
+        <a href="shop.html" class="btn btn-gold mt-3">Explore Our Collection</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Story Section -->
+  <section class="container py-5 text-center fade-in">
+    <h2>Our Story</h2>
+    <div class="divider"></div>
+    <p class="mt-3">
+      Established in 2022, <strong>B6 Vintage Cloth Store</strong> began as a small idea — 
+      to revive the golden age of fashion and bring it into the modern world.
+      From humble beginnings, B6 has grown into a trusted name representing authenticity,
+      elegance, and timeless appeal. We design for people who wear confidence — not just clothes.
+    </p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 <strong>B6 Vintage Cloth Store</strong> | Designed by <a href="#">B6Innovations</a></p>
+  </footer>
+
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Fade-in animation on scroll
+    const faders = document.querySelectorAll('.fade-in');
+    const appearOptions = { threshold: 0.2 };
+    const appearOnScroll = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      });
+    }, appearOptions);
+    faders.forEach(fader => appearOnScroll.observe(fader));
+  </script>
+</body>
+</html>

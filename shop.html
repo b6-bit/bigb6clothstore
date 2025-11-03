@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>B6 Vintage Cloth Store - Shop</title>
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background: radial-gradient(circle at top, #000000 60%, #1a1a1a 100%);
+      color: #FFD700;
+      font-family: 'Poppins', sans-serif;
+      min-height: 100vh;
+    }
+
+    .navbar {
+      background-color: rgba(17, 17, 17, 0.9);
+      border-bottom: 2px solid #FFD700;
+      backdrop-filter: blur(6px);
+    }
+
+    .navbar-brand, .nav-link {
+      color: #FFD700 !important;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+    }
+
+    .navbar-brand:hover, .nav-link:hover {
+      color: #fff !important;
+    }
+
+    /* Search Bar */
+    .search-bar {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 50px 0 30px;
+    }
+
+    .search-container {
+      position: relative;
+      width: 60%;
+    }
+
+    .search-container input {
+      width: 100%;
+      padding: 12px 45px 12px 20px;
+      border: 2px solid #FFD700;
+      border-radius: 50px;
+      background-color: #000;
+      color: #FFD700;
+      font-size: 16px;
+      outline: none;
+      transition: 0.3s ease-in-out;
+    }
+
+    .search-container input:focus {
+      box-shadow: 0 0 20px rgba(255, 215, 0, 0.4);
+    }
+
+    .search-container i {
+      position: absolute;
+      right: 15px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: #FFD700;
+      font-size: 20px;
+      cursor: pointer;
+    }
+
+    h1 {
+      text-align: center;
+      color: #FFD700;
+      margin-bottom: 20px;
+      text-shadow: 0 0 15px #FFD700;
+      font-weight: 700;
+    }
+
+    .divider {
+      width: 80px;
+      height: 3px;
+      background: #FFD700;
+      margin: 0 auto 50px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px #FFD700;
+    }
+
+    .category {
+      background: rgba(17, 17, 17, 0.9);
+      border: 2px solid #FFD700;
+      border-radius: 20px;
+      padding: 30px;
+      text-align: center;
+      box-shadow: 0 0 25px rgba(255, 215, 0, 0.15);
+      backdrop-filter: blur(5px);
+      transition: all 0.4s ease-in-out;
+    }
+
+    .category:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 0 40px rgba(255, 215, 0, 0.4);
+    }
+
+    .category h2 {
+      color: #FFD700;
+      margin-bottom: 20px;
+      font-weight: 600;
+    }
+
+    .subcategory {
+      margin-top: 10px;
+    }
+
+    .subcategory-item {
+      background: linear-gradient(145deg, #111, #000);
+      border: 1px solid #FFD700;
+      border-radius: 8px;
+      padding: 15px;
+      margin-bottom: 12px;
+      transition: all 0.3s ease;
+      cursor: pointer;
+      color: #FFD700;
+      font-weight: 500;
+      letter-spacing: 0.5px;
+    }
+
+    .subcategory-item:hover {
+      background: #FFD700;
+      color: #000;
+      transform: translateY(-4px);
+      box-shadow: 0 0 15px rgba(255, 215, 0, 0.6);
+    }
+
+    footer {
+      background-color: #111;
+      color: #FFD700;
+      text-align: center;
+      padding: 15px;
+      margin-top: 60px;
+      border-top: 2px solid #FFD700;
+    }
+  </style>
+  <script src="https://kit.fontawesome.com/a2e0d6a2d7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark shadow">
+    <div class="container">
+      <a class="navbar-brand" href="#">B6 Vintage Store</a>
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link active" href="#">Shop</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="https://forms.gle/e2sSQjE6hUvJGqMv8">Feedback</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+<br>
+<br>
+  <div class="container">
+    <h1>Shop by Category</h1>
+    <div class="divider"></div>
+    <div class="row g-5">
+
+      <!-- Shoes -->
+      <div class="col-md-4">
+        <div class="category">
+          <h2>Shoes</h2>
+          <div class="subcategory">
+            <a href="nike.html" class="subcategory-item text-decoration-none d-block">Nike</a>
+            <a href="adidas.html" class="subcategory-item text-decoration-none d-block">Adidas</a>
+            <a href="others.html" class="subcategory-item text-decoration-none d-block">Others</a>
+          </div>
+        </div>
+      </div>
+
+     <div class="col-md-4">
+        <div class="category">
+          <h2>Accessories</h2>
+          <div class="subcategory">
+            <a href="watchs.html" class="subcategory-item text-decoration-none d-block">Watch</a>
+            <a href="belt.html" class="subcategory-item text-decoration-none d-block">Belt</a>
+            <a href="sunglasses.html" class="subcategory-item text-decoration-none d-block">SunGlasses</a>
+          </div>
+        </div>
+      </div>
+
+       <div class="col-md-4">
+        <div class="category">
+          <h2>Dress</h2>
+          <div class="subcategory">
+            <a href="\shirt.html" class="subcategory-item text-decoration-none d-block">Shirt</a>
+            <a href="\pants.html" class="subcategory-item text-decoration-none d-block">Pants</a>
+            <a href="cap.html" class="subcategory-item text-decoration-none d-block">Cap</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2025 B6 Vintage Cloth Store | Designed by <strong>B6Innovations</strong></p>
+  </footer>
+
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+
+
+
+

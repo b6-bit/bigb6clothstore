@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>B6 Vintage Cloth Store - Pants Collection</title>
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a2e0d6a2d7.js" crossorigin="anonymous"></script>
+
+  <style>
+    body {
+      background: radial-gradient(circle at top, #000 60%, #1a1a1a 100%);
+      color: #FFD700;
+      font-family: 'Poppins', sans-serif;
+      min-height: 100vh;
+    }
+
+    .navbar {
+      background-color: rgba(17, 17, 17, 0.9);
+      border-bottom: 2px solid #FFD700;
+      backdrop-filter: blur(6px);
+    }
+
+    .navbar-brand, .nav-link {
+      color: #FFD700 !important;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+    }
+
+    .navbar-brand:hover, .nav-link:hover {
+      color: #fff !important;
+    }
+
+    h1 {
+      text-align: center;
+      color: #FFD700;
+      margin-top: 80px;
+      margin-bottom: 15px;
+      text-shadow: 0 0 15px #FFD700;
+      font-weight: 700;
+    }
+
+    .divider {
+      width: 80px;
+      height: 3px;
+      background: #FFD700;
+      margin: 0 auto 40px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px #FFD700;
+    }
+
+    .product-card {
+      background: rgba(17, 17, 17, 0.9);
+      border: 1px solid #FFD700;
+      border-radius: 15px;
+      padding: 20px;
+      text-align: center;
+      transition: all 0.4s ease-in-out;
+      box-shadow: 0 0 20px rgba(255, 215, 0, 0.1);
+    }
+
+    .product-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 0 35px rgba(255, 215, 0, 0.4);
+    }
+
+    .product-card img {
+      border-radius: 10px;
+      margin-bottom: 15px;
+      transition: transform 0.3s ease;
+      width: 100%;
+      height: auto;
+    }
+
+    .product-card:hover img {
+      transform: scale(1.05);
+    }
+
+    .product-card h5 {
+      color: #FFD700;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+
+    .product-card p {
+      color: #ccc;
+      font-size: 0.9rem;
+      margin-bottom: 15px;
+    }
+
+    .btn-gold {
+      background-color: #FFD700;
+      color: #000;
+      border: none;
+      font-weight: 600;
+      border-radius: 30px;
+      padding: 10px 20px;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .btn-gold:hover {
+      background-color: #e6c200;
+      transform: scale(1.05);
+    }
+
+    footer {
+      background-color: #111;
+      color: #FFD700;
+      text-align: center;
+      padding: 15px;
+      margin-top: 60px;
+      border-top: 2px solid #FFD700;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark shadow fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">B6 Vintage Store</a>
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link active" href="shop.html">Shop</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="https://forms.gle/e2sSQjE6hUvJGqMv8">Feedback</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Title -->
+  <div class="container">
+    <h1>Pants Collection</h1>
+    <div class="divider"></div>
+
+    <!-- Product Grid -->
+    <div class="row g-4">
+
+      <!-- Product 1 -->
+      <div class="col-md-4">
+        <div class="product-card">
+          <img src="/img/pant1.jpeg" alt="Over Jeans">
+          <h5>Over Jeans</h5>
+          <p>Retro-inspired comfort with timeless gold-accented detailing.</p>
+          <p>Rs.899</p>
+          <button class="btn-gold"><i class="fas fa-cart-plus me-2"></i>Add to Cart</button>
+        </div>
+      </div>
+
+      <!-- Product 2 -->
+      <div class="col-md-4">
+        <div class="product-card">
+          <img src="/img/pant2.jpeg" alt="Faded Jeans">
+          <h5>Faded Jeans #1</h5>
+          <p>Lightweight and bold. Designed for the modern vintage aesthetic.</p>
+          <p>Rs.899</p>
+          <button class="btn-gold"><i class="fas fa-cart-plus me-2"></i>Add to Cart</button>
+        </div>
+      </div>
+
+      <!-- Product 3 -->
+      <div class="col-md-4">
+        <div class="product-card">
+          <img src="/img/pant3.jpeg" alt="Faded Jeans2">
+          <h5>Faded Jeans #2</h5>
+          <p>Old-school meets new-age craftsmanship. A timeless streetwear piece.</p>
+          <p>Rs.899</p>
+          <button class="btn-gold"><i class="fas fa-cart-plus me-2"></i>Add to Cart</button>
+        </div>
+      </div>
+
+      <!-- Product 4 -->
+      <div class="col-md-4">
+        <div class="product-card">
+          <img src="/img/pant4.jpeg" alt="NM Jeans">
+          <h5>NM Jeans</h5>
+          <p>Sporty yet sleek. Built for speed and styled for the streets.</p>
+          <p>Rs.899</p>
+          <button class="btn-gold"><i class="fas fa-cart-plus me-2"></i>Add to Cart</button>
+        </div>
+      </div>
+
+      <!-- Product 5 -->
+      <div class="col-md-4">
+        <div class="product-card">
+          <img src="/img/pant5.jpeg" alt="Black Jeans">
+          <h5>Black Jeans</h5>
+          <p>Inspired by the 80s. Premium materials meet retro performance.</p>
+          <p>Rs.899</p>
+          <button class="btn-gold"><i class="fas fa-cart-plus me-2"></i>Add to Cart</button>
+        </div>
+      </div>
+
+      <!-- Product 6 -->
+      <div class="col-md-4">
+        <div class="product-card">
+          <img src="/img/pant6.jpeg" alt="Over NM Jeans">
+          <h5>Over NM Jeans</h5>
+          <p>High cushioning meets vintage tones — crafted for true collectors.</p>
+          <p>Rs.899</p>
+          <button class="btn-gold"><i class="fas fa-cart-plus me-2"></i>Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 B6 Vintage Cloth Store | Designed by <strong>B6Innovations</strong></p>
+  </footer>
+
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
